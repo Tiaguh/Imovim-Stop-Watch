@@ -1,4 +1,4 @@
-<h3>Clock-Imovim<h3>
+<h3>Imovim Stop Watch<h3>
 
 <h5>Este projeto foi desenvolvido para sabermos quanto tempo ainda temos para terminar nosso TCC.</h5>
 
