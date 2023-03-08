@@ -2,20 +2,14 @@ let numberDays = document.getElementById("numberDays")
 let text = document.getElementById("text")
 
 function clock(){
-  let data = new Date()
+  let beginData = new Date("2023-02-14")
+  let actualData = new Date()
 
-  let startingDay = 13; // dia em que o projeto de 100 dias começou. (14/02/2023)
-  let day = data.getDate();
+  let remainingDays = Math.trunc((actualData.getTime() - beginData.getTime()) / (1000 * 3600 *24));
 
-  let remainingDays = 100-(day - startingDay)
-
-  numberDays.innerHTML = remainingDays;
-  text.innerHTML = "dias!"
-
-  if(remainingDays <= 0){
-    numberDays.innerHTML = "Acabou o tempo!!!";
-    text.innerHTML = ""
-  }
+  numberDays.innerHTML = 100 - remainingDays
+  
+  
 }
 
 clock()
