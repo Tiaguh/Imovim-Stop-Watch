@@ -9,7 +9,6 @@ function clock(){
 
   numberDays.innerHTML = 100 - remainingDays
   
-  
 }
 
 clock()
